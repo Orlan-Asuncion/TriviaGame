@@ -5,21 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <a img src="assets/images/vector-Stock.jpg"></a>
 
 
 </head>
 
 <body>
+<div class="container">
+<h1>Trivial Trivia Game</h1>
 
-<div class="container">  
-    <h1>Totally Trivial Trivia</h1>
 
-<div class="leftTime"><span style="color:blue;font-weight:bold">Time:</span>0</div>
-<div class="rightAnswer"><span style="color:blue;font-weight:bold">Right Aswer:</span>0</div>
-<div class="wrongAnswer"><span style="color:blue;font-weight:bold">Wrong Aswer:</span>0</div>
+
+<form id="test" name="test">
+<p>what does CSS means?</p>
+    <input type="radio" id="mc" name="question1" value="Cascading Style Sheet" > Cascading Style Sheet<br>
+    <input type="radio" id="mc" name="question1" value="Cool Style Sheet"> Cool Style Sheet<br>
+    <input type="radio" id="mc" name="question1" value="Column Style Sheet" > Column Styles Sheet<br>
+    <input type="radio" id="mc" name="question1" value="Cascading Stylus Sheet"> Column Stylus sheet<br>
+
+<p>what is the newest version of HTML?</p>        
+    <input type="radio" id="mc" name="question2" value="HTML4" > HTML4<br>
+    <input type="radio" id="mc" name="question2" value="HTML3"> HTML3<br>
+    <input type="radio" id="mc" name="question2" value="HTML5" > HTML5<br>
+    <input type="radio" id="mc" name="question2" value="HTML6"> HTML6<br>
+        
+<p>Which of these is a genuine tag?</p>               
+    <input type="radio" id="mc" name="question3" value="Header" > Header<br>
+    <input type="radio" id="mc" name="question3" value="Bold"> Bold<br>
+    <input type="radio" id="mc" name="question3" value="Body" > Body<br>
+    <input type="radio" id="mc" name="question3" value="Image"> Image<br>
+                
+                        
+<input id= "button" type= "button" value="I'm finished!" onclick = "check();">
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+<div id= "after_submit">
+    <p id="message"></p> 
+    <p id="number_correct"></p>
+    <img id="pictures">
+</div>
+      
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -29,6 +85,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script rel="stylesheet" type="text/javascript" src="assets/javascript/app.js"></script>
 
-</div>
+
 </body>
 </html>
