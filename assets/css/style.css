@@ -1,11 +1,25 @@
+.card-body{    
+    background-color: rgba(5, 71, 44, 0.486);
+    text-align: justify;
+    text-align: center;
+    text-shadow: 3px 2px white;
+    color: rgb(140, 0, 255);
+    font-size: 30px;    
+}  
 #test {
     margin-left: 10px;
-    background: #d2def2;
+    background: #3e7ee6;
     padding: 10px 20px 10px 20px;
     width: 400px;
+    border-radius: 10px;
     float: left;
 }
+/* h3{
+    background-color: #d2def2;
+   
+    padding: 10px;
 
+} */
 input{
     margin-bottom: 20px;    
 }
@@ -15,7 +29,7 @@ input{
      border-radius: 5px; 
     padding: 10px;
     color: rgb(180, 180, 223);
-    font-size: 18px;
+    font-size: 16px;
     transition-duration: .5s;
     margin-top: 15px;
 }
@@ -25,22 +39,26 @@ input{
     color: black;
     cursor: pointer;
 }
-body{
-    background: orange;
-    background-image: url("images/vector-Stock.jpg")
-}
+/* body{
+    background: orange; */
+
+
 #after_submit {
-    visibility: hidden;
-    background: #1b66df;
-    border-radius: 5px;
+    background: #107c3d;   
     padding: 20px;
     width: 400px;
-    font-size: 24;
+    border-radius: 5px;
+    font-size: 30px;
+    color: black;
+    margin-left: 10px;
     float: left;
 }
 #pictures {
-    width: 400px;
+    width: 375px;
     height: 250px;
+}
+#mc{
+    background-color: blue;
 }
 
 
