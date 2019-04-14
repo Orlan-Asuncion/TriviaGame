@@ -1,11 +1,12 @@
-
+alert("connected");
 function check(){
 
 var question1 = document.test.question1.value;
 var question2 = document.test.question2.value;
 var question3 = document.test.question3.value;
-// var question4 = document.test.question4.value;
-// var question5 = document.test.question5.value;
+var question4 = document.test.question4.value;
+var question5 = document.test.question5.value;
+var question5 = document.test.question6.value;s
 var correct = 0;
 
     if (question1 == "Cascading Style Sheet"){
@@ -15,6 +16,15 @@ var correct = 0;
         correct++;
     }
     if (question3 == "Header"){
+        correct++;
+    }
+    if (question4 == "C#"){
+        correct++;
+    }
+    if (question5 == "CSS"){
+        correct++;
+    }
+    if (question == "All"){
         correct++;
     }
 var messages = ["Great job!", "That's just okay", "You need to do better than that!"];
@@ -40,7 +50,7 @@ if(score > 2){
     document.getElementById("pictures").src = pictures[range];
 };
 
-function setBackgroundImage(myObject, imageUrl) {
+ function setBackgroundImage(myObject, imageUrl) {
     myObject.css({
                  "background-image": "url(" + imageUrl + ")",
                  "background-position": "center",
@@ -52,9 +62,7 @@ function setBackgroundImage(myObject, imageUrl) {
   setBackgroundImage(body, imageUrl);
 
 
-
-
-
+    
 
 
 

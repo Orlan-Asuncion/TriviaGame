@@ -1,4 +1,4 @@
-.card-body{    
+ .card-body{    
     background-color: rgba(5, 71, 44, 0.486);
     text-align: justify;
     text-align: center;
@@ -14,13 +14,13 @@
     border-radius: 10px;
     float: left;
 }
-/* h3{
+ h3{
     background-color: #d2def2;
    
     padding: 10px;
 
-} */
-input{
+} 
+ input{
     margin-bottom: 20px;    
 }
 #button{
@@ -36,11 +36,11 @@ input{
 #button:hover{
     background: white;
     border: 1px solid blue;
-    color: black;
+    color: black; 
     cursor: pointer;
 }
-/* body{
-    background: orange; */
+ body{
+    background: orange; 
 
 
 #after_submit {
@@ -53,27 +53,20 @@ input{
     margin-left: 10px;
     float: left;
 }
+#after_submit{
+    visibility: hidden;
+}
 #pictures {
-    width: 375px;
-    height: 250px;
+    width: 275px;
+    height: 150px;
 }
 #mc{
     background-color: blue;
-}
+} 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
+ 
