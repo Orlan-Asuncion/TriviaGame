@@ -1,26 +1,36 @@
-.card-body{    
-    background-color: rgba(5, 71, 44, 0.486);
+ .jumbotron{    
+    background-color: rgba(8, 131, 80, 0.486);
     text-align: justify;
-    text-align: center;
-    text-shadow: 3px 2px white;
-    color: rgb(140, 0, 255);
-    font-size: 30px;    
-}  
-#test {
+    text-align: center;    
+    color: rgb(192, 11, 11);
+    font-size: 30px; 
+    border: 1px solid red;
+    border-radius: 20px;
+      
+}   
+ #test {
     margin-left: 10px;
-    background: #3e7ee6;
+    background: transparent;
     padding: 10px 20px 10px 20px;
     width: 400px;
     border-radius: 10px;
     float: left;
-}
-/* h3{
-    background-color: #d2def2;
-   
-    padding: 10px;
+    position: absolute;
+    font-size: 24px;
+    color:blue; 
 
-} */
-input{
+} 
+h1{
+    background-color: #d2def2;   
+    padding: 10px;
+    text-shadow: 3px 2px white;
+    color:red;
+    font-style: futurism;
+
+   
+}   
+
+ input{
     margin-bottom: 20px;    
 }
 #button{
@@ -36,31 +46,75 @@ input{
 #button:hover{
     background: white;
     border: 1px solid blue;
-    color: black;
+    color: black; 
     cursor: pointer;
 }
-/* body{
-    background: orange; */
+ body{
+   font-family: Arial, Helvetica, sans-serif;
 
-
-#after_submit {
-    background: #107c3d;   
-    padding: 20px;
+}
+    
+ #after_submit {
+    visibility: hidden;
+    background: #ff5459;   
+    padding: 10px 20px 10px 20px;
     width: 400px;
-    border-radius: 5px;
+    border-radius: 20px;
+    float: right;
+    margin-left: 20px;
     font-size: 30px;
-    color: black;
-    margin-left: 10px;
-    float: left;
-}
+   
+} 
 #pictures {
-    width: 375px;
-    height: 250px;
+    width: 350px;
+    height: 245px;
+} 
+#clock-timer{
+    position: fixed;
+    width: 400px;
+    background: #d2def2;
+    padding: 10px;
+    border-radius: 20px;
+    float:left;
 }
-#mc{
-    background-color: blue;
+/* #welcomeContainer{
+    position: Absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+#resultContainer{
+    position: Absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+#gameContainer,#submitBtn,#resultContainer, #timerDiver{
+    display: none;
+}
+p{
+    list-style: none;
 }
 
+#clock-timer{
+    position: fixed;
+}
+#startBtn{
+    background: blue;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(180, 180, 223);
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;
+}
+
+#startBtn:hover{
+    background: white;
+    border: 1px solid blue;
+    color: black; 
+    cursor: pointer;
 
 
 
@@ -70,10 +124,5 @@ input{
 
 
 
-
-
-
-
-
-
-
+  
+ 
