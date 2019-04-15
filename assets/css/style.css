@@ -1,5 +1,10 @@
+<<<<<<< HEAD
  .jumbotron{    
     background-color: rgba(8, 131, 80, 0.486);
+=======
+ .card-body{    
+    background-color: rgba(5, 71, 44, 0.486);
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
     text-align: justify;
     text-align: center;    
     color: rgb(192, 11, 11);
@@ -15,6 +20,7 @@
     width: 400px;
     border-radius: 10px;
     float: left;
+<<<<<<< HEAD
     position: absolute;
     font-size: 24px;
     color:blue; 
@@ -22,14 +28,24 @@
 } 
 h1{
     background-color: #d2def2;   
+=======
+}
+ h3{
+    background-color: #d2def2;
+   
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
     padding: 10px;
     text-shadow: 3px 2px white;
     color:red;
     font-style: futurism;
 
+<<<<<<< HEAD
    
 }   
 
+=======
+} 
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
  input{
     margin-bottom: 20px;    
 }
@@ -50,7 +66,11 @@ h1{
     cursor: pointer;
 }
  body{
+<<<<<<< HEAD
    font-family: Arial, Helvetica, sans-serif;
+=======
+    background: orange; 
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
 
 }
     
@@ -63,6 +83,7 @@ h1{
     float: right;
     margin-left: 20px;
     font-size: 30px;
+<<<<<<< HEAD
    
 } 
 #pictures {
@@ -119,6 +140,22 @@ p{
 
 
 
+=======
+    color: black;
+    margin-left: 10px;
+    float: left;
+}
+#after_submit{
+    visibility: hidden;
+}
+#pictures {
+    width: 275px;
+    height: 150px;
+}
+#mc{
+    background-color: blue;
+} 
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
 
 
 

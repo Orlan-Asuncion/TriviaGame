@@ -7,115 +7,108 @@
     <title>Trivia Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="htts://fonts.googleapis.com/css?family">
+    
 
 </head>
 
 <body>
-    <div class="jumbotron vertical-center jumbotron-fluid" id="welcome-container" style="height:40% width:50%;background:transpaarent">
-     <div class="container text-center text-body">
-        <h1><strong>TRIVIAL TRIVIA GAME</strong></h1>
-        <p><em>You have 60 seconds to play the game.You will be time out in 60seconds</em></p>
-        <p><em>Enjoy & Have some fun!!!</em></p>
-        <p class="btn btn-primary btn-lg" role="button" id="startBtn"> START GAME</p>
+    
+     <div class="card">
+        <div class="card-body">
+            TRIVIAL TRIVIA GAMES
         </div>
-    </div>
-        <div class="row">
-                <div class="col-md-4 mx-5 text-warning" id="timerDiv">
-                    <h3 id="clock-timer">Time Remaining: <span id="timeremaining">60 Seconds</span></h3>
-                </div>
+        </div>        
+            
         </div>
-        
+      </div>   
 <div class="container">
-    
   
-<div class="container" id="gameContainer">
-    <div class="row ">
-        <div class="col-lg-6">
-        <form id="test" name="test">
-        <p class="text-justify"><strong>What does CSS means?</strong></p>
-            <input type="radio" id="mc" name="question1" value= "Cascading Style Sheet" > Cascading Style Sheet<br>
-            <input type="radio" id="mc" name="question1" value= "Cool Style Sheet"> Cool Style Sheet<br>
-            <input type="radio" id="mc" name="question1" value= "Column Style Sheet" > Column Styles Sheet<br>
-            <input type="radio" id="mc" name="question1" value= "Cascading Stylus Sheet"> Column Stylus sheet<br>
 
-        <p class="type-justify"><strong>What is the newest version of HTML?</strong></p>        
-            <input type="radio" id="mc" name="question2" value= "HTML4" > HTML4<br>
-            <input type="radio" id="mc" name="question2" value= "HTML3"> HTML3<br>
-            <input type="radio" id="mc" name="question2" value= "HTML5" > HTML5<br>
-            <input type="radio" id="mc" name="question2" value= "HTML6"> HTML6<br>
+<form id="test" name="test">
+<p>what does CSS means?</p>
+    <input type="radio" id="mc" name="question1" value= "Cascading Style Sheet" > Cascading Style Sheet<br>
+    <input type="radio" id="mc" name="question1" value= "Cool Style Sheet"> Cool Style Sheet<br>
+    <input type="radio" id="mc" name="question1" value= "Column Style Sheet" > Column Styles Sheet<br>
+    <input type="radio" id="mc" name="question1" value= "Cascading Stylus Sheet"> Column Stylus sheet<br>
+
+<p>what is the newest version of HTML?</p>        
+    <input type="radio" id="mc" name="question2" value= "HTML4" > HTML4<br>
+    <input type="radio" id="mc" name="question2" value= "HTML3"> HTML3<br>
+    <input type="radio" id="mc" name="question2" value= "HTML5" > HTML5<br>
+    <input type="radio" id="mc" name="question2" value= "HTML6"> HTML6<br>
         
-        <p  class="type-justify">Which of these is a genuine tag?</strong></p>               
-            <input type="radio" id="mc" name="question3" value="Header" > Header<br>
-            <input type="radio" id="mc" name="question3" value="Bold"> Bold<br>
-            <input type="radio" id="mc" name="question3" value="Body" > Body<br>
-            <input type="radio" id="mc" name="question3" value="Image"> Image<br>
+<p>Which of these is a genuine tag?</p>               
+    <input type="radio" id="mc" name="question3" value="Header" > Header<br>
+    <input type="radio" id="mc" name="question3" value="Bold"> Bold<br>
+    <input type="radio" id="mc" name="question3" value="Body" > Body<br>
+    <input type="radio" id="mc" name="question3" value="Image"> Image<br>
 
-        <p class="type-justify"><strong>Which one is not an object oriented programming?</strong></p>               
-            <input type="radio" id="mc" name="question4" value="Java" > Java<br>
-            <input type="radio" id="mc" name="question4" value="C#"> C#<br>
-            <input type="radio" id="mc" name="question4" value="C" > C<br>
-            <input type="radio" id="mc" name="question4" value="C++"> C++<br>     
+ <p>Which one is not an object oriented programming?</p>               
+    <input type="radio" id="mc" name="question4" value="Java" > Java<br>
+    <input type="radio" id="mc" name="question4" value="C#"> C#<br>
+    <input type="radio" id="mc" name="question4" value="C" > C<br>
+    <input type="radio" id="mc" name="question4" value="C++"> C++<br>     
 
-        <p class="type-justify">Which language is used for styling web pages?</strong></p>               
-            <input type="radio" id="mc" name="question5" value="HTML" > HTML<br>
-            <input type="radio" id="mc" name="question5" value="CSS"> CSS<br>
-            <input type="radio" id="mc" name="question5" value="JQuery" > JQuery<br>
-            <input type="radio" id="mc" name="question5" value="Xml"> Xml<br>    
+<p>Which language is used for styling web pages?</p>               
+    <input type="radio" id="mc" name="question5" value="HTML" > HTML<br>
+    <input type="radio" id="mc" name="question5" value="CSS"> CSS<br>
+    <input type="radio" id="mc" name="question5" value="JQuery" > JQuery<br>
+    <input type="radio" id="mc" name="question5" value="Xml"> Xml<br>    
 
-        <p class="type-justify"><strong>Which language is used for web apps?</strong></p>               
-            <input type="radio" id="mc" name="question6" value="PHP" > HTML<br>
-            <input type="radio" id="mc" name="question6" value="Phyton"> Phyton<br>
-            <input type="radio" id="mc" name="question6" value="Javascript" > Javascript<br>
-            <input type="radio" id="mc" name="question6" value="All of the above"> All of the above<br>
-    
-        <p class="type-justify"><strong>I am coding when i accidentally deleted part of my work.Which shortcut command to use to undo the error?</strong></p>               
-            <input type="radio" id="mc" name="question7" value="Ctrl Z" > Ctrl Z<br>
-            <input type="radio" id="mc" name="question7" value="Alt B"> Alt B<br>
-            <input type="radio" id="mc" name="question7" value="Ctrl D" > Ctrl D<br>
-            <input type="radio" id="mc" name="question7" value="None of the above"> None of the above<br> 
-
-        <p class="type-justify"><strong>Prt Scrn key is an abbreviation for?</strong></p>               
-            <input type="radio" id="mc" name="question8" value="Control Print" > Control Print<br>
-            <input type="radio" id="mc" name="question8" value="Print Screen"> Print Screen<br>
-            <input type="radio" id="mc" name="question8" value="Page Up" > Page Up<br>
-            <input type="radio" id="mc" name="question8" value="Number Lock"> Number Lock<br> 
+    <p>Which language is used for web apps?</p>               
+    <input type="radio" id="mc" name="question6" value="PHP" > HTML<br>
+    <input type="radio" id="mc" name="question6" value="Phyton"> Phyton<br>
+    <input type="radio" id="mc" name="question6" value="Javascript" > Javascript<br>
+    <input type="radio" id="mc" name="question6" value="All"> All<br>    
                         
-        <input id= "button" type= "button" value="I'm Done!" onclick = "getResult();">
-        </form>
-    </div>
-    </div>
-    <!-- <div class="row text-center id=submitBtn">
-        <div class="col-md-12">
-            <button class="btn btn-primary btn-lg"type="button"id="doneBtn"> DONE</button>
-        </div>
-    </div> -->
-</div>    
-    <div id= "after_submit">
-        <p id="message"></p> 
-        <p id="number_correct"></p>
-        <img id="pictures">
-    </div>
+<input id= "button" type= "button" value="I'm Done!" onclick = "check();">
 
-    <div class="jumbotron jumbotron-fluid">
-            <div class="container text-center">
-              <h1 class="display-4"> Score Board</h1>
-              <br>
-              <h1>Correct Answers:<span id="correct-ans">0</span></h1>
-              <h1>Incorrect Answers:<span id="incorrect-ans">0</span></h1>
-              <h1>Unanswered:<span id="unanswered">0</span></h1>
-              <br>
-              <p class="btn btn-primary btn-lg" role="button" id="playAgainBtn">PLAY AGAIN</p>
-            </div>
-          </div>
+</form>
+
     
+<div id= "after_submit">
+    <p id="message"></p> 
+    <p id="number_correct"></p>
+    <img id="pictures">
+    </div>
+ </div>      
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+
+
+
+
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script rel="stylesheet" type="text/javascript" src="assets/javascript/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script rel="stylesheet" type="text/javascript" src="assets/javascript/app.js"></script>
+ -->
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  alert("connected");
 timeRemaining = 60;
 correctAns = 0;
@@ -65,6 +66,10 @@ function startCountdown(){
 
  
        
+=======
+alert("connected");
+function check(){
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
 
 
 function getResult(){
@@ -74,9 +79,13 @@ var question2 = document.test.question2.value;
 var question3 = document.test.question3.value;
 var question4 = document.test.question4.value;
 var question5 = document.test.question5.value;
+<<<<<<< HEAD
 var question6 = document.test.question6.value;
 var question7 = document.test.question7.value;
 var question8 = document.test.question8.value;
+=======
+var question5 = document.test.question6.value;s
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
 var correct = 0;
 
     if (question1 == "Cascading Style Sheet"){
@@ -88,12 +97,17 @@ var correct = 0;
     if (question3 == "Header"){
         correct++;
     }
+<<<<<<< HEAD
     if (question4 == "C"){
+=======
+    if (question4 == "C#"){
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
         correct++;
     }
     if (question5 == "CSS"){
         correct++;
     }
+<<<<<<< HEAD
     if (question6 == "All of the above"){
         correct++;
     }
@@ -101,6 +115,9 @@ var correct = 0;
         correct++;
     }
     if (question8 == "Print Screen"){
+=======
+    if (question == "All"){
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
         correct++;
     }
 var messages = ["Great job!", "That's just okay", "You need to do better than that!"];
@@ -123,7 +140,10 @@ if (correct > 0 && correct < 8){
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
     document.getElementById("pictures").src = pictures[range];
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
  function setBackgroundImage(myObject, imageUrl) {
     myObject.css({
                  "background-image": "url(" + imageUrl + ")",
@@ -134,4 +154,26 @@ if (correct > 0 && correct < 8){
   var body = $("body");
   var imageUrl = 'assets/images/circuit-wallpapers.jpg';
   setBackgroundImage(body, imageUrl);
+<<<<<<< HEAD
 }
+=======
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
