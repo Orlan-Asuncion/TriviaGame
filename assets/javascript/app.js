@@ -1,91 +1,84 @@
-<<<<<<< HEAD
- alert("connected");
-timeRemaining = 60;
-correctAns = 0;
-incorrectAns = 0;
-unAns = 0;
+ alert("connected"); 
+//  timeRemaining = 60;
+//  correctAns = 0;
+//  incorrectAns = 0;
+//  unAns = 0;
 
-var refreshIntervalid = null;
+//  var refreshIntervalid = null;
 
- $(document).ready(function(){
+//   $(document).ready(function(){
 
-      $("#startBtn").click(function(){
-      $("welcomeContainer").hide();   
-      $("gameContainer").show();
-      $("#submitBtn").show();
-      $("#timerDiv").show();
-      $("resultContainer").hide();
-    //   startCoundown();
-    });
+//        $("#startBtn").click(function(){
+//        $("welcomeContainer").hide();   
+//        $("gameContainer").show();
+//        $("#submitBtn").show();
+//        $("#timerDiv").show();
+//        $("resultContainer").hide();
+//         startCoundown();
+//      });
  
-});
+//  });
 
-$("#doneBtn").click(function(){
-    $("#gameContainer").hide();
-    $("#doneBtn").hide();
-    $("#timerDiv").hide();
-    $("#resultContainer").show();
-    getResult();
-    clearInterval(refreshIntervalId);
-    })
+//  $("#doneBtn").click(function(){
+//      $("#gameContainer").hide();
+//      $("#doneBtn").hide();
+//      $("#timerDiv").hide();
+//      $("#resultContainer").show();
+//      getResult();
+//      clearInterval(refreshIntervalId);
+//      })
 
-$("#playAgainBtn").click(function(){
-    location.reload();
-    })
+//  $("#playAgainBtn").click(function(){
+//      location.reload();
+//      })
 
-// Counts down and displays the time to the user
-function countdown(){
+//   Counts down and displays the time to the user
+//  function countdown(){
 
-    // Decrement the timeRemaning, down from 60 seconds
-    timeRemaning--;
+//       Decrement the timeRemaning, down from 60 seconds
+//      timeRemaning--;
 
-    // Display the timeRemaning to the user in the DOM
-    $('#timeRemaning').html(timeRemaning + " Seconds");
-    console.log(timeRemaning);
+//       Display the timeRemaning to the user in the DOM
+//      $('#timeRemaning').html(timeRemaning + " Seconds");
+//      console.log(timeRemaning);
    
-    /* if timeRemaning <=0 then stop the timer */
-    if(timeRemaning <= 0){
-        clearInterval(refreshIntervalId);
-        $("#gameContainer").hide();
-        $("#doneBtn").hide();
-        $("#resultContainer").show();
-        getResult();
-    }
-}
+//      /* if timeRemaning <=0 then stop the timer */
+//      if(timeRemaning <= 0){
+//          clearInterval(refreshIntervalId);
+//          $("#gameContainer").hide();
+//          $("#doneBtn").hide();
+//          $("#resultContainer").show();
+//          getResult();
+//      }
+//  }
 
-// Show the countdown, increment is 1 second
-function startCountdown(){
-    refreshIntervalId = setInterval(countdown, 1000);
-}
+//   Show the countdown, increment is 1 second
+//  function startCountdown(){
+//      refreshIntervalId = setInterval(countdown, 1000);
+//  }
 
 
- // After answers are validated, display the score results
- $('#correct-ans').html(correctAns);
- $('#incorrect-ans').html(incorrectAns);
- $('#un-ans').html(unAns);
+//    After answers are validated, display the score results
+//   $('#correct-ans').html(correctAns);
+//   $('#incorrect-ans').html(incorrectAns);
+//   $('#un-ans').html(unAns);
+// 
 
- 
+
+
        
-=======
-alert("connected");
+
 function check(){
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
 
-
-function getResult(){
     
 var question1 = document.test.question1.value;
 var question2 = document.test.question2.value;
 var question3 = document.test.question3.value;
 var question4 = document.test.question4.value;
 var question5 = document.test.question5.value;
-<<<<<<< HEAD
 var question6 = document.test.question6.value;
 var question7 = document.test.question7.value;
 var question8 = document.test.question8.value;
-=======
-var question5 = document.test.question6.value;s
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
 var correct = 0;
 
     if (question1 == "Cascading Style Sheet"){
@@ -97,17 +90,12 @@ var correct = 0;
     if (question3 == "Header"){
         correct++;
     }
-<<<<<<< HEAD
     if (question4 == "C"){
-=======
-    if (question4 == "C#"){
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
         correct++;
     }
     if (question5 == "CSS"){
         correct++;
     }
-<<<<<<< HEAD
     if (question6 == "All of the above"){
         correct++;
     }
@@ -115,59 +103,40 @@ var correct = 0;
         correct++;
     }
     if (question8 == "Print Screen"){
-=======
-    if (question == "All"){
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
         correct++;
     }
-var messages = ["Great job!", "That's just okay", "You need to do better than that!"];
+
+
+    var messages = ["Great job!", "That's just okay", "You need to do better than that!"];
 var pictures = ["assets/images/win.gif","assets/images/fair.gif","assets/images/lose.gif"];
 
 var range;
 
 if (score = 8) {   
-    range = [0];
+    range = 0;
 } 
 if ( correct < 1){
-    range = [2];
+    range = 2;
 }
 if (correct > 0 && correct < 8){
-    range = [1];
+    range = 1;
 }
    
     document.getElementById("after_submit").style.visibility = "visible";
+
     document.getElementById("message").innerHTML = messages[range];
-    document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
     document.getElementById("pictures").src = pictures[range];
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
- function setBackgroundImage(myObject, imageUrl) {
-    myObject.css({
-                 "background-image": "url(" + imageUrl + ")",
-                 "background-position": "center",
-                 });
-  }
-
-  var body = $("body");
-  var imageUrl = 'assets/images/circuit-wallpapers.jpg';
-  setBackgroundImage(body, imageUrl);
-<<<<<<< HEAD
+    document.getElementById("number_correct").innerHTML = "You got " + correct + " correct."; 
 }
-=======
-
-
-    
-
-
-
-
-
-
-
-
+// myObject.css({
+//     "background-image": "url(" + imageUrl + ")",
+//     "background-position": "center",
+//     });    
+//      var body = $("body");
+//      var imageUrl = 'assets/images/vector-Stock.jpg';
+//      setBackgroundImage(body, imageUrl);
+//      transition-duration: .5s;       
+$('body').css('background-image', 'url(assets/images/HD.jpg)');
 
 
 
@@ -176,4 +145,10 @@ if (correct > 0 && correct < 8){
 
 
 
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
+
+
+
+
+
+
+

@@ -1,54 +1,36 @@
-<<<<<<< HEAD
- .jumbotron{    
+ body{
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+  .jumbotron{    
     background-color: rgba(8, 131, 80, 0.486);
-=======
- .card-body{    
-    background-color: rgba(5, 71, 44, 0.486);
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
     text-align: justify;
     text-align: center;    
     color: rgb(192, 11, 11);
     font-size: 30px; 
     border: 1px solid red;
     border-radius: 20px;
-      
-}   
+  } 
  #test {
     margin-left: 10px;
-    background: transparent;
+    background: rgb(135, 145, 233);
     padding: 10px 20px 10px 20px;
     width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
+    color: rgb(9, 9, 94);
     float: left;
-<<<<<<< HEAD
-    position: absolute;
-    font-size: 24px;
-    color:blue; 
-
-} 
-h1{
-    background-color: #d2def2;   
-=======
 }
- h3{
-    background-color: #d2def2;
-   
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
-    padding: 10px;
-    text-shadow: 3px 2px white;
-    color:red;
-    font-style: futurism;
-
-<<<<<<< HEAD
+#input{
+    margin-bottom: 20px; 
+}
+h1{
+    background-color: #d2def2;  
+    text-align: center;
+    text-shadow: 3px 2px red;
+    border-radius: 10px;
    
 }   
-
-=======
-} 
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
- input{
-    margin-bottom: 20px;    
-}
+    
 #button{
     background: blue;
     border: none;
@@ -64,15 +46,9 @@ h1{
     border: 1px solid blue;
     color: black; 
     cursor: pointer;
+    transition-duration: .5s;
 }
- body{
-<<<<<<< HEAD
-   font-family: Arial, Helvetica, sans-serif;
-=======
-    background: orange; 
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
-
-}
+ 
     
  #after_submit {
     visibility: hidden;
@@ -80,31 +56,34 @@ h1{
     padding: 10px 20px 10px 20px;
     width: 400px;
     border-radius: 20px;
-    float: right;
+    float: left;
     margin-left: 20px;
     font-size: 30px;
-<<<<<<< HEAD
+
    
 } 
 #pictures {
-    width: 350px;
+    width: 355px;
     height: 245px;
 } 
-#clock-timer{
+#mc{
+    background-color: blue;
+} 
+/* #clock-timer{
     position: fixed;
     width: 400px;
     background: #d2def2;
     padding: 10px;
     border-radius: 20px;
     float:left;
-}
+} */
 /* #welcomeContainer{
     position: Absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 } */
-#resultContainer{
+ #resultContainer{
     position: Absolute;
     top: 45%;
     left: 50%;
@@ -120,14 +99,14 @@ p{
 
 #clock-timer{
     position: fixed;
+    color: rgb(236, 109, 92);
 }
-#startBtn{
+/* #startBtn{
     background: blue;
     border-radius: 5px;
     padding: 10px;
     color: rgb(180, 180, 223);
     font-size: 16px;
-    transition-duration: .5s;
     margin-top: 15px;
 }
 
@@ -136,26 +115,16 @@ p{
     border: 1px solid blue;
     color: black; 
     cursor: pointer;
-
-
-
-
-=======
     color: black;
     margin-left: 10px;
     float: left;
-}
-#after_submit{
-    visibility: hidden;
-}
-#pictures {
-    width: 275px;
-    height: 150px;
-}
-#mc{
-    background-color: blue;
-} 
->>>>>>> 195f3608dad0b4931fe2152e3399acaedb5951d2
+   
+} */
+
+
+
+
+
 
 
 
