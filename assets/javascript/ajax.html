@@ -36,8 +36,10 @@
 // })
 $( "#btn" ).click(function() {
     $.ajax({
-    url:"https://www.omdbapi.com/?t=matrix&apikey=trilogy",
-    method:"GET"
+        url: "https://api.giphy.com/v1/gifs/search?q=animalss&api_key=Zd6cDW9560jLDNXmbdBgLWPO3wWucf5P&limit=10",
+        method: "GET"
+    // url:"https://www.omdbapi.com/?t=matrix&apikey=trilogy",
+    // method:"GET"
 }).done(function(data){
     console.log(data);
     console.log(data.Plot);

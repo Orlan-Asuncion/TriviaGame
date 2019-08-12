@@ -90,7 +90,7 @@ var correct = 0;
     if (question3 == "Header"){
         correct++;
     }
-    if (question4 == "C"){
+    if (question4 == "Java"){
         correct++;
     }
     if (question5 == "CSS"){
@@ -112,7 +112,7 @@ var pictures = ["assets/images/win.gif","assets/images/fair.gif","assets/images/
 
 var range;
 
-if (score = 8) {   
+if (score == 8) {   
     range = 0;
 } 
 if ( correct < 1){

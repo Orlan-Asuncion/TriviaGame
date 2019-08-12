@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo</title>
+    </head>
+
+<body>
+    <style>
+    a.test {
+        font-weight: bold;
+    }
+    
+    
+    </style>
+    <a href="http;//jquery.com/">Orlando</a>
+    <script src="jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("a").click(function(event){
+            alert("the link will no longer take you to Jquery.com");
+            event.preventDefault();
+            $(this).hide('slow');
+        });
+    });
+    $('a').addClass("test");
+    $('a').removeClass("test");
+
+
+
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
