@@ -112,7 +112,7 @@ var pictures = ["assets/images/win.gif","assets/images/fair.gif","assets/images/
 
 var range;
 
-if (score == 8) {   
+if (correct == 8) {   
     range = 0;
 } 
 if ( correct < 1){
@@ -123,7 +123,6 @@ if (correct > 0 && correct < 8){
 }
    
     document.getElementById("after_submit").style.visibility = "visible";
-
     document.getElementById("message").innerHTML = messages[range];
     document.getElementById("pictures").src = pictures[range];
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct."; 
