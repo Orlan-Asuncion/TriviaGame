@@ -97,9 +97,9 @@ p{
     list-style: none;
 }
 
-#clock-timer{
+#timer{
     position: fixed;
-    color: rgb(236, 109, 92);
+    color: #f52b11;
 }
 /* #startBtn{
     background: blue;

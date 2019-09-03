@@ -1,4 +1,29 @@
- alert("connected"); 
+var startBtn = document.querySelector("#startBtn");
+var game = document.getElementById("test");
+var timeRemaining = document.getElementById("timer");
+timeRemaining= 15;
+game.style.display = "none";
+startBtn.addEventListener("click", function(){
+  //start clock timer
+  //hide start button
+  startBtn.style.display = "none";
+  //show game/questions
+  $("#test").show();
+});
+    // $("#startBtn").click(function(){
+    //         var sec = 60;
+    //         var timer = setInterval(function(){
+    //             document.getElementById("#clock-timer").innerHTML='00:'+sec;
+    //             sec--;
+    //             if (sec < 0) {
+    //                 clearInterval(timer);
+    //             }
+    //         }, 1000);
+    //     });
+    // });
+
+
+
 //  timeRemaining = 60;
 //  correctAns = 0;
 //  incorrectAns = 0;
@@ -68,9 +93,7 @@
 
        
 
-function check(){
-
-    
+function check(){    
 var question1 = document.test.question1.value;
 var question2 = document.test.question2.value;
 var question3 = document.test.question3.value;
@@ -127,6 +150,7 @@ if (correct > 0 && correct < 8){
     document.getElementById("pictures").src = pictures[range];
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct."; 
 }
+
 // myObject.css({
 //     "background-image": "url(" + imageUrl + ")",
 //     "background-position": "center",
