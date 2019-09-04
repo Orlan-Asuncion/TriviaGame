@@ -1,98 +1,43 @@
 var startBtn = document.querySelector("#startBtn");
 var game = document.getElementById("test");
 var timeRemaining = document.getElementById("timer");
-timeRemaining= 15;
+var counter = 30;
+var timer;
 game.style.display = "none";
+var reset = document.getElementById("reset");
+reset.addEventListener("click", function(){
+   //restart game
+   // timeUp();
+    gameOver();
+    location.reload();
+});
+function timeUp(){
+    clearInterval(timer);
+    alert("You're out of time! Play again!");
+}
+function gameOver(){
+    clearInterval(timer);
+    $("#test").hide();
+
+}
+function countDown(){
+    counter--;
+    $("#timer").html("Time Remaining " + counter + " seconds");
+    if(counter === 0){
+        timeUp();
+        gameOver();
+    }
+}
 startBtn.addEventListener("click", function(){
   //start clock timer
+  counter = 30;
+  timer = setInterval(countDown, 1000);
   //hide start button
   startBtn.style.display = "none";
   //show game/questions
   $("#test").show();
 });
-    // $("#startBtn").click(function(){
-    //         var sec = 60;
-    //         var timer = setInterval(function(){
-    //             document.getElementById("#clock-timer").innerHTML='00:'+sec;
-    //             sec--;
-    //             if (sec < 0) {
-    //                 clearInterval(timer);
-    //             }
-    //         }, 1000);
-    //     });
-    // });
-
-
-
-//  timeRemaining = 60;
-//  correctAns = 0;
-//  incorrectAns = 0;
-//  unAns = 0;
-
-//  var refreshIntervalid = null;
-
-//   $(document).ready(function(){
-
-//        $("#startBtn").click(function(){
-//        $("welcomeContainer").hide();   
-//        $("gameContainer").show();
-//        $("#submitBtn").show();
-//        $("#timerDiv").show();
-//        $("resultContainer").hide();
-//         startCoundown();
-//      });
- 
-//  });
-
-//  $("#doneBtn").click(function(){
-//      $("#gameContainer").hide();
-//      $("#doneBtn").hide();
-//      $("#timerDiv").hide();
-//      $("#resultContainer").show();
-//      getResult();
-//      clearInterval(refreshIntervalId);
-//      })
-
-//  $("#playAgainBtn").click(function(){
-//      location.reload();
-//      })
-
-//   Counts down and displays the time to the user
-//  function countdown(){
-
-//       Decrement the timeRemaning, down from 60 seconds
-//      timeRemaning--;
-
-//       Display the timeRemaning to the user in the DOM
-//      $('#timeRemaning').html(timeRemaning + " Seconds");
-//      console.log(timeRemaning);
-   
-//      /* if timeRemaning <=0 then stop the timer */
-//      if(timeRemaning <= 0){
-//          clearInterval(refreshIntervalId);
-//          $("#gameContainer").hide();
-//          $("#doneBtn").hide();
-//          $("#resultContainer").show();
-//          getResult();
-//      }
-//  }
-
-//   Show the countdown, increment is 1 second
-//  function startCountdown(){
-//      refreshIntervalId = setInterval(countdown, 1000);
-//  }
-
-
-//    After answers are validated, display the score results
-//   $('#correct-ans').html(correctAns);
-//   $('#incorrect-ans').html(incorrectAns);
-//   $('#un-ans').html(unAns);
-// 
-
-
-
-       
-
+    
 function check(){    
 var question1 = document.test.question1.value;
 var question2 = document.test.question2.value;
@@ -149,6 +94,7 @@ if (correct > 0 && correct < 8){
     document.getElementById("message").innerHTML = messages[range];
     document.getElementById("pictures").src = pictures[range];
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct."; 
+    clearInterval(timer);
 }
 
 // myObject.css({

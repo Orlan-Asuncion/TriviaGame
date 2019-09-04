@@ -69,20 +69,7 @@ h1{
 #mc{
     background-color: blue;
 } 
-/* #clock-timer{
-    position: fixed;
-    width: 400px;
-    background: #d2def2;
-    padding: 10px;
-    border-radius: 20px;
-    float:left;
-} */
-/* #welcomeContainer{
-    position: Absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+
  #resultContainer{
     position: Absolute;
     top: 45%;
@@ -95,31 +82,23 @@ h1{
 }
 p{
     list-style: none;
+    color: white;
 }
 
 #timer{
     position: fixed;
     color: #f52b11;
-}
-/* #startBtn{
-    background: blue;
-    border-radius: 5px;
-    padding: 10px;
-    color: rgb(180, 180, 223);
-    font-size: 16px;
-    margin-top: 15px;
+   
 }
 
-#startBtn:hover{
-    background: white;
-    border: 1px solid blue;
-    color: black; 
-    cursor: pointer;
-    color: black;
-    margin-left: 10px;
-    float: left;
-   
-} */
+h2{ 
+    position: fixed;
+    color: #f52b11;
+    border: 1px solid white;
+    border-radius:5px;
+    padding: 15px;
+}
+
 
 
 
